@@ -12,6 +12,6 @@ public class ControllerAdvice {
     public ResponseEntity<ErrorResult> handleNotNumberException(){
       ErrorResult error =   ErrorResult.builder()
                  .message("Please provide integer value to calculate ").build();
-        return new ResponseEntity<ErrorResult>(error,HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(error,HttpStatus.BAD_REQUEST);
     }
 }

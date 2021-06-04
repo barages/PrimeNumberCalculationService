@@ -6,6 +6,10 @@ import java.util.Arrays;
 
 public class TestData {
 
+    private TestData(){
+
+    }
+
     public static  final PrimeNumberDetails PRIME_NUMBER_DETAILS =
                         PrimeNumberDetails.builder()
                                 .primes(Arrays.asList(2,3,5,7))
